@@ -17,8 +17,13 @@
     }
 
     @font-face {
-        font-family: 'HAL timezone';
+        font-family: 'HAL timezone book';
         src: url('HALTimezoneUnlicensed-Book.ttf');
+    }
+
+    @font-face {
+        font-family: 'HAL timezone regular';
+        src: url('HALTimezoneUnlicensed-Regular.ttf');
     }
 
     html,
@@ -62,7 +67,7 @@
         font-size: 22px;
         line-height: 30px;
         max-width: 500px;
-        font-family: 'HAL timezone'
+        font-family: 'HAL timezone book'
 
     }
 
@@ -83,7 +88,7 @@
     }
 
     marquee {
-        height: 20px;
+        height: 24px;
         position: fixed;
         width: 100%;
         top: 0px;
@@ -91,6 +96,7 @@
         z-index: 10;
         font-family: 'courier-sans';
         font-size: 12px;
+        line-height: 18px;
         text-transform: uppercase;
         border-bottom: 1px dotted mediumorchid;
         background: lightgreen;
@@ -119,7 +125,7 @@
 
 
     section {
-        padding: 0px 30px;
+        padding: 20px 50px;
         overflow-y: scroll;
 
 
@@ -132,22 +138,23 @@
     }
 
     #about {
-        width: 45%;
+        width: 50%;
         height: 100%;
         background-color: cornsilk;
         background-attachment: fixed;
         border-left: 1px dotted cornflowerblue;
         color: darkslateblue;
-
+        /* padding-right: 120px; */
 
     }
 
     #examples {
-        width: 55%;
+        width: 50%;
         height: 100%;
         background-color: darkslateblue;
         color: cornsilk;
         background-attachment: fixed;
+        /* padding-left: 120px; */
 
 
 
@@ -191,6 +198,15 @@
     #whee p {
         font-family: cursive;
 
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        section,
+        #about,
+        #examples {
+            padding: 20px 30px;
+        }
     }
 
     @media screen and (max-width: 600px) {
@@ -260,32 +276,34 @@
                     and then again into
 
                     <span id="thing3">...</span>
-                </p> <img style="cursor:pointer" onclick="generate()"
-                    src="https://web.archive.org/web/20090829022439im_/http://www.geocities.com/oberon_n/spiral.gif">
+                </p> <img style="cursor:pointer" onclick="generate()" src="spiral.gif">
 
-                <!-- <button onclick="generate()">
-                    RANDOMIZE
-                </button> -->
             </div>
             <h1><span class="underline-2">experiments + examples</span></h1>
-            <!-- <br><br>𖦹 -->
-            <ul><span class="pname">on cyan</span> is an <a href="">artist book</a> which is also a <a
-                    href="">minifilm</a></ul>
-            <ul><span class="pname">touching eachother through semiconduction</span> is an <a href="">artist book</a>
-                which is also a <a href="">web poem</a></ul>
-            <ul><span class="pname">tonguetwist</span> is an <a href="">growing collection of transfluxions</a> which is
-                also a
-                <a href="">learning tool</a> which could also be a teaching tool?
+            <ul><span class="pname">on cyan</span> is an <a href="https://kaaathy.com/#/cyan" target="_blank">artist
+                    book</a> which is also a <a href="https://vimeo.com/781114238?fl=pl&fe=ti"
+                    target="_blank">minifilm</a></ul>
+            <ul><span class="pname">touching eachother through semiconduction</span> is an <a
+                    href="https://kaaathy.com/#/semiconduction" target="_blank">artist book</a>
+                which is also a <a href="https://kaaathy.com/semiconduction/index.html" target="_blank">web poem</a>
             </ul>
-            <ul><span class="pname">this text</span> is a <a href="">book</a> which is also a <a href="">website</a>
+            <ul><span class="pname">tonguetwist</span> is an <a href="https://kaaathy.com/tongue-twist/"
+                    target="_blank">growing collection of
+                    transfluxions</a> which is
+                also a learning tool which could also be a teaching tool?
             </ul>
-            <ul><span class="pname">this text</span> is a <a href="">book</a> which is also a <a href="">website</a>
+            <ul><span class="pname">this text</span> is a <a href="" target="_blank">book</a> which is also a <a href=""
+                    target="_blank">website</a>
             </ul>
-            <ul><span class="pname">this text</span> is a <a href="">book</a> which is also a <a href="">website</a>
+            <ul><span class="pname">this text</span> is a <a href="" target="_blank">book</a> which is also a <a href=""
+                    target="_blank">website</a>
+            </ul>
+            <ul><span class="pname">this text</span> is a <a href="" target="_blank">book</a> which is also a <a href=""
+                    target="_blank">website</a>
             </ul>
             <div class="flowers-field">
-                &nbsp;&nbsp;✿&nbsp;&nbsp;&nbsp;✻&nbsp;&nbsp;&nbsp;✻&nbsp;&nbsp;&nbsp;✿&nbsp;&nbsp;
-                <br>\|/ \|/ \|/ \|/
+                &nbsp;&nbsp;✿&nbsp;&nbsp;&nbsp;✻&nbsp;&nbsp;&nbsp;✿&nbsp;&nbsp;
+                <br>\|/ \|/ \|/
             </div>
         </section>
         <section id="about">
@@ -293,7 +311,7 @@
                 a press which is also not a press!
             </marquee>
             <h1><span class="underline">ethos</span> ☺︎</h1>
-            <p> This is not a press which is also
+            <p> This is not a press which is
                 also hanging out with friends which is also a
                 series of experiments and a thing that will grow.
                 <br><br>
@@ -301,8 +319,8 @@
 
             <p class="footnote">Inspired by HTMLReview, Oral.Pub, Tilted House, Cartonera Collective, etc... Set in
                 Courier Prime Sans, HAL Timezone Trial,
-                and whatever default monospace and cursive font is in your browser.
-                This site was lovingly handcoded and uses no libraries or analytics.
+                and whatever default cursive font is in your browser.
+                This site was lovingly handcoded and uses no libraries or analytics. spinny Gif from Gifcities.org.
 
 
 

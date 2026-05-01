@@ -18,24 +18,18 @@ RITUAL
 ALBUM OF SONGS
 craigslist
 facebook marketplace
-aspen magazine
-ubuweb
 an oulipian poem
 a fluxist work
 a hollywood blockbuster film
 a short film
 a tv series
 a text exchange
-a score by john cage
 a tarot card deck
 the bible
 greek myth
-Randomly selected book from Fleet
-met museum exhibition
+Randomly selected book from library
+museum exhibition
 Wattpad novel
-Taylor Swift’s discography
-Trader Joe’s cereal packaging
-A random folder of images from special collections
 folklore/tall tale
 fangirls
 Tourist traps
@@ -43,40 +37,30 @@ Social media filter
 Clothing
 Pumpkin
 Microwave
-A cult classic
-A overrated album
-A sentimental object
+cult classic
+overrated album
+sentimental object
 Moldy bread
 Soundcloud rap
 Pens
 Socks
 comment section of a drama channel on YouTube 
 Leaves
-Babies
 Road signs
-Mennonite mailbox signs
 Lease for an apartment 
-Product reviews on Amazon 
-Nature lab
-Raunchy books that middle aged women read
 screenshots on your desktop
 Ironic license plates
 Music video
 A lived experience
-Rice purity test
 Dreams
-Cheap porn
 Notes app
 Dr bronners packaging manifesto
 Users manual
-RISD’s past yearbooks
+past yearbooks
 Dating app bots
 Twitter bots
-Those weird sexual ads that pop up when you're trying to watch on a pirated website
 Yogi tea threatening inspirational quotes
-Law and order special victims unit
 Youtube video essay
-MILFs in your area ads
 Hong Kong new wave movies
 Norwegian Wood by Murakami
 Roots
@@ -89,7 +73,8 @@ Real estate development brochures
 Draft emails
 The most important gift you’ve ever received
 Things in the trash
-To do list/ calendar 
+To do list
+calendar 
 Garbage
 Textbook
 `;
@@ -130,7 +115,6 @@ Animated GIFs
 Sculpture
 Menu
 cookbook
-A diss track
 Textiles
 Phone wallpaper
 Calendar
@@ -155,9 +139,7 @@ embroidery
 Flip book
 Food
 Flags
-Apology video
 Vlog
-Wanted poster
 Site specific Projection
 Belt
 Billboard
@@ -191,7 +173,7 @@ function newTexts() {
 }
 
 function clear() {
-  let loadstring = `*`;
+  let loadstring = `✻`;
   for (let i = 0; i < allThings.length; i++) {
     allThings[i].innerHTML = loadstring;
   }
