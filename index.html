@@ -94,7 +94,7 @@
         text-transform: uppercase;
         border-bottom: 1px dotted mediumorchid;
         background: lightgreen;
-        color: slateblue;
+        color: darkslateblue;
         margin: 0px;
         padding: 0px;
         padding-top: 10px;
@@ -107,6 +107,14 @@
         text-transform: uppercase;
         padding-top: 50px;
         padding-bottom: 10px;
+    }
+
+    button {
+        font-family: 'courier-sans';
+        font-size: 12px;
+        text-transform: uppercase;
+
+        padding: 4px;
     }
 
 
@@ -165,6 +173,26 @@
 
     }
 
+    #thing1,
+    #thing2,
+    #thing3 {
+        /* background-color: rgb(255, 184, 53); */
+        padding: 0px 6px;
+        border-radius: 2px;
+        color: orange;
+        font-family: 'Hal timezone';
+    }
+
+    #whee {
+        padding: 40px 0px;
+        border-bottom: 1px dotted cornflowerblue;
+    }
+
+    #whee p {
+        font-family: cursive;
+
+    }
+
     @media screen and (max-width: 600px) {
 
         html,
@@ -218,11 +246,29 @@
 <body>
     <!-- <p id="surprise">☺</p> -->
 
-    <!-- this is the start of content -->
     <div id="container">
         <section id="examples">
+            <div id="whee">
+
+                <p>translate
+
+                    <span id="thing1">...</span>
+
+                    into
+
+                    <span id="thing2">...</span>
+                    and then again into
+
+                    <span id="thing3">...</span>
+                </p> <img style="cursor:pointer" onclick="generate()"
+                    src="https://web.archive.org/web/20090829022439im_/http://www.geocities.com/oberon_n/spiral.gif">
+
+                <!-- <button onclick="generate()">
+                    RANDOMIZE
+                </button> -->
+            </div>
             <h1><span class="underline-2">experiments + examples</span></h1>
-            <br>𖦹
+            <!-- <br><br>𖦹 -->
             <ul><span class="pname">on cyan</span> is an <a href="">artist book</a> which is also a <a
                     href="">minifilm</a></ul>
             <ul><span class="pname">touching eachother through semiconduction</span> is an <a href="">artist book</a>
@@ -247,8 +293,9 @@
                 a press which is also not a press!
             </marquee>
             <h1><span class="underline">ethos</span> ☺︎</h1>
-            <p> This is a micro press which is also not a press which is also hanging out with friends which is also a
-                series of experiments.
+            <p> This is not a press which is also
+                also hanging out with friends which is also a
+                series of experiments and a thing that will grow.
                 <br><br>
                 Pedagogically oriented towards teaching how to make your own books and websites.
 
@@ -266,5 +313,6 @@
 
         </section>
     </div>
+    <script src="generator.js"></script>
 
 </html>

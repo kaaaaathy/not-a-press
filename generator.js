@@ -1,0 +1,203 @@
+
+let thing1 = document.getElementById("thing1");
+let thing2 = document.getElementById("thing2");
+let thing3 = document.getElementById("thing3");
+
+let allThings = [thing1, thing2, thing3];
+
+let objectList = `BOOK
+FILM
+WALK
+MAP
+DOCUMENT
+PLAY
+MUSEUM EXHIBIT
+ARCHIVE
+SOCIAL MEDIA PLATFORM
+RITUAL
+ALBUM OF SONGS
+craigslist
+facebook marketplace
+aspen magazine
+ubuweb
+an oulipian poem
+a fluxist work
+a hollywood blockbuster film
+a short film
+a tv series
+a text exchange
+a score by john cage
+a tarot card deck
+the bible
+greek myth
+Randomly selected book from Fleet
+met museum exhibition
+Wattpad novel
+Taylor Swift’s discography
+Trader Joe’s cereal packaging
+A random folder of images from special collections
+folklore/tall tale
+fangirls
+Tourist traps
+Social media filter 
+Clothing
+Pumpkin
+Microwave
+A cult classic
+A overrated album
+A sentimental object
+Moldy bread
+Soundcloud rap
+Pens
+Socks
+comment section of a drama channel on YouTube 
+Leaves
+Babies
+Road signs
+Mennonite mailbox signs
+Lease for an apartment 
+Product reviews on Amazon 
+Nature lab
+Raunchy books that middle aged women read
+screenshots on your desktop
+Ironic license plates
+Music video
+A lived experience
+Rice purity test
+Dreams
+Cheap porn
+Notes app
+Dr bronners packaging manifesto
+Users manual
+RISD’s past yearbooks
+Dating app bots
+Twitter bots
+Those weird sexual ads that pop up when you're trying to watch on a pirated website
+Yogi tea threatening inspirational quotes
+Law and order special victims unit
+Youtube video essay
+MILFs in your area ads
+Hong Kong new wave movies
+Norwegian Wood by Murakami
+Roots
+Pop up ads
+Rituals vs routines
+Low resolution
+cats
+Spam emails
+Real estate development brochures
+Draft emails
+The most important gift you’ve ever received
+Things in the trash
+To do list/ calendar 
+Garbage
+Textbook
+`;
+
+let translationList = `AN INSTALLATION
+A MAP
+AN EXHIBITION
+A WEB POEM
+A VIDEO
+A SOUNDTRACK
+A DIVINATION TOOL
+A BILLBOARD
+A ZINE
+A QUILT
+AN ARTIST BOOK
+a symphony 
+Google drive folder
+Karaoke
+Vinyl
+Stone carving
+Pool tiles
+A cookbook
+Moss growing
+zine series
+temporary installation 
+Catalog
+Book
+Music video
+Puzzle
+Candy
+Map
+Color swatch book
+Pop up book
+Album cover
+Packaging design
+Stickers
+Animated GIFs
+Sculpture
+Menu
+cookbook
+A diss track
+Textiles
+Phone wallpaper
+Calendar
+Projection mapping
+Jewelry
+Sculpture
+A playlist
+Dj set
+Poster
+A dance
+labels
+Clothing
+Admission tickets
+Lottery tickets
+Postcards
+Business cards
+A play 
+Noise
+Grass growing
+Cross stitch
+embroidery
+Flip book
+Food
+Flags
+Apology video
+Vlog
+Wanted poster
+Site specific Projection
+Belt
+Billboard
+`;
+
+let objects = objectList.split("\n");
+let translations = translationList.split("\n");
+let randomObj, random1, random2;
+
+function newRandom() {
+  return translations[Math.floor(Math.random() * translations.length)];
+}
+
+function checkRepeat() {
+  let x = newRandom();
+  while (x == random1) {
+    x = newRandom();
+  }
+  return x;
+}
+
+function newTexts() {
+  randomObj = objects[Math.floor(Math.random() * objects.length)];
+  random1 = newRandom();
+  random2 = checkRepeat();
+
+  thing1.innerHTML = randomObj;
+  thing2.innerHTML = random1;
+  thing3.innerHTML = random2;
+
+}
+
+function clear() {
+  let loadstring = `*`;
+  for (let i = 0; i < allThings.length; i++) {
+    allThings[i].innerHTML = loadstring;
+  }
+}
+function generate() {
+  clear();
+  setTimeout(newTexts, 3000)
+
+}
