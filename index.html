@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>not a press</title>
+
+
+</head>
+
+<style>
+    @font-face {
+        font-family: 'courier-sans';
+        src: url('courier-prime-sans.regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'HAL timezone';
+        src: url('HALTimezoneUnlicensed-Book.ttf');
+    }
+
+    html,
+    body {
+        min-height: 100%;
+        background-color: cornflowerblue;
+        overscroll-behavior: none;
+
+        text-transform: lowercase;
+        /* overflow: hidden; */
+
+    }
+
+
+    body {
+        margin: 0px;
+        height: 100vh;
+
+    }
+
+    a {
+        text-decoration-style: wavy;
+        text-decoration-color: cornflowerblue;
+        color: cornsilk;
+    }
+
+    .pname {
+        /* font-family: 'courier-sans'; */
+        /* text-transform: uppercase; */
+        /* font-size: 16px; */
+        /* letter-spacing: -0.5px; */
+        /* font-weight: bold; */
+
+        font-family: cursive;
+        padding-right: 5px;
+
+    }
+
+    p,
+    ul {
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 500px;
+        font-family: 'HAL timezone'
+
+    }
+
+    ul {
+        text-indent: 0%;
+        list-style-position: inside;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    #container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-flow: row nowrap;
+        margin: auto;
+
+    }
+
+    marquee {
+        height: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        z-index: 10;
+        font-family: 'courier-sans';
+        font-size: 12px;
+        text-transform: uppercase;
+        border-bottom: 1px dotted mediumorchid;
+        background: lightgreen;
+        color: slateblue;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+
+    }
+
+    h1 {
+        font-family: 'courier-sans';
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+
+    section {
+        padding: 0px 30px;
+        overflow-y: scroll;
+
+
+    }
+
+    .footnote {
+        font-family: 'courier-sans', monospace;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    #about {
+        width: 45%;
+        height: 100%;
+        background-color: cornsilk;
+        background-attachment: fixed;
+        border-left: 1px dotted cornflowerblue;
+        color: darkslateblue;
+
+
+    }
+
+    #examples {
+        width: 55%;
+        height: 100%;
+        background-color: darkslateblue;
+        color: cornsilk;
+        background-attachment: fixed;
+
+
+
+    }
+
+    .underline {
+        border-bottom: 3px solid lightgreen;
+
+    }
+
+
+    .flowers-field {
+        z-index: 10;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        user-select: none;
+        color: cornflowerblue;
+        /* mix-blend-mode: color-dodge; */
+        font-family: 'courier-sans';
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+    @media screen and (max-width: 600px) {
+
+        html,
+        body {
+            overflow: scroll;
+            text-align: center;
+
+        }
+
+        ul,
+        p {
+            font-size: 24px;
+            line-height: 30px;
+
+        }
+
+        #container {
+            flex-flow: row wrap;
+        }
+
+        #about,
+        #examples {
+            width: 100%;
+            min-height: 700px;
+            height: auto;
+            border: none;
+            padding: 0px 50px;
+
+        }
+
+        #about {
+            border-top: 1px dotted cornflowerblue;
+        }
+
+        .flowers-field {
+            width: 80%;
+        }
+
+
+
+
+        .footnote,
+        h1 {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+    }
+</style>
+
+<body>
+    <!-- <p id="surprise">☺</p> -->
+
+    <!-- this is the start of content -->
+    <div id="container">
+        <section id="examples">
+            <h1><span class="underline-2">experiments + examples</span></h1>
+            <br>𖦹
+            <ul><span class="pname">on cyan</span> is an <a href="">artist book</a> which is also a <a
+                    href="">minifilm</a></ul>
+            <ul><span class="pname">touching eachother through semiconduction</span> is an <a href="">artist book</a>
+                which is also a <a href="">web poem</a></ul>
+            <ul><span class="pname">tonguetwist</span> is an <a href="">anthology of transfluxions</a> which is also a
+                <a href="">pedagogical tool</a>
+            </ul>
+            <ul><span class="pname">this text</span> is a <a href="">book</a> which is also a <a href="">website</a>
+            </ul>
+            <ul><span class="pname">this text</span> is a <a href="">book</a> which is also a <a href="">website</a>
+            </ul>
+            <ul><span class="pname">this text</span> is a <a href="">book</a> which is also a <a href="">website</a>
+            </ul>
+            <div class="flowers-field">
+                &nbsp;&nbsp;✿&nbsp;&nbsp;&nbsp;✻&nbsp;&nbsp;&nbsp;✻&nbsp;&nbsp;&nbsp;✿&nbsp;&nbsp;
+                <br>\|/ \|/ \|/ \|/
+            </div>
+        </section>
+        <section id="about">
+            <marquee scrollamount="3">
+                a press which is also not a press!
+            </marquee>
+            <h1><span class="underline">ethos</span> ☺︎</h1>
+            <p> This is a micro press which is also not a press which is also hanging out with friends which is also a
+                series of experiments.
+                <br><br>
+                Pedagogically oriented towards teaching how to make your own books and websites.
+
+            <p class="footnote">Inspired by HTMLReview, Oral.Pub, Tilted House, Cartonera Collective, etc... Set in
+                Courier Prime Sans, HAL Timezone Trial,
+                and whatever default monospace and cursive font is in your browser.
+                This site was lovingly handcoded and uses no libraries or analytics.
+
+
+
+            </p>
+            </p>
+            <h1><span class="underline">workshops</span></h1>
+            <ul>none upcoming~</ul>
+
+        </section>
+    </div>
+
+</html>
