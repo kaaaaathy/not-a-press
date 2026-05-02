@@ -33,10 +33,14 @@
         overscroll-behavior: none;
 
         text-transform: lowercase;
+
         /* overflow: hidden; */
 
     }
 
+    body::selection {
+        color: coral;
+    }
 
     body {
         margin: 0px;
@@ -44,13 +48,27 @@
 
     }
 
-    a {
+    #examples a {
         text-decoration-style: wavy;
         text-decoration-color: cornflowerblue;
         color: cornsilk;
     }
 
-    .pname {
+    #about a {
+        text-decoration-style: wavy;
+        text-decoration-color: lightgreen;
+        color: darkslateblue;
+
+    }
+
+    a:hover,
+    #examples a:hover,
+    #about a:hover {
+        color: cornflowerblue;
+
+    }
+
+    .cursive {
         /* font-family: 'courier-sans'; */
         /* text-transform: uppercase; */
         /* font-size: 16px; */
@@ -58,7 +76,8 @@
         /* font-weight: bold; */
 
         font-family: cursive;
-        padding-right: 5px;
+        padding-right: 4px;
+        font-size: 24px;
 
     }
 
@@ -89,6 +108,7 @@
 
     marquee {
         height: 24px;
+        user-select: none;
         position: fixed;
         width: 100%;
         top: 0px;
@@ -113,6 +133,7 @@
         text-transform: uppercase;
         padding-top: 50px;
         padding-bottom: 10px;
+
     }
 
     button {
@@ -166,17 +187,22 @@
     }
 
 
-    .flowers-field {
-        z-index: 10;
+    .seedlings {
         display: block;
         position: fixed;
-        bottom: 0px;
+        bottom: -5px;
         user-select: none;
         color: cornflowerblue;
         font-family: 'courier-sans';
         font-size: 12px;
         text-align: center;
 
+    }
+
+    .little-flower {
+        color: orange;
+        font-size: 16px;
+        padding: 0px 8px;
     }
 
     #thing1,
@@ -190,14 +216,10 @@
     }
 
     #whee {
-        padding: 40px 0px;
+        padding: 30px 0px;
         border-bottom: 1px dotted cornflowerblue;
     }
 
-    #whee p {
-        font-family: cursive;
-
-    }
 
     @media screen and (max-width: 1200px) {
 
@@ -238,12 +260,20 @@
 
         }
 
-        #about {
-            border-top: 1px dotted cornflowerblue;
+        #whee {
+            padding-top: 50px;
         }
 
-        .flowers-field {
-            width: 80%;
+        #about {
+            border-top: 1px dotted cornflowerblue;
+            padding-bottom: 100px;
+
+        }
+
+        .seedlings {
+            width: 100%;
+            margin-left: -50px;
+            font-size: 16px;
         }
 
 
@@ -265,7 +295,7 @@
         <section id="examples">
             <div id="whee">
 
-                <p>translate
+                <p class="cursive">translate
 
                     <span id="thing1">...</span>
 
@@ -279,30 +309,32 @@
 
             </div>
             <h1><span class="underline-2">experiments + examples</span></h1>
-            <ul><span class="pname">on cyan</span> is an <a href="https://kaaathy.com/#/cyan" target="_blank">artist
+            <ul><span class="cursive">on cyan</span> is an <a href="https://kaaathy.com/#/cyan" target="_blank">artist
                     book</a> which is also a <a href="https://vimeo.com/781114238?fl=pl&fe=ti"
                     target="_blank">minifilm</a></ul>
-            <ul><span class="pname">touching eachother through semiconduction</span> is an <a
+            <ul><span class="cursive">touching eachother through semiconduction</span> is an <a
                     href="https://kaaathy.com/#/semiconduction" target="_blank">artist book</a>
                 which is also a <a href="https://kaaathy.com/semiconduction/index.html" target="_blank">web poem</a>
             </ul>
-            <ul><span class="pname">tonguetwist</span> is an <a href="https://kaaathy.com/tongue-twist/"
+            <ul><span class="cursive">tonguetwist</span> is an <a href="https://kaaathy.com/tongue-twist/#examples"
                     target="_blank">growing collection of
                     transfluxions</a> which is
-                also a learning tool which could also be a teaching tool?
+                also a <a href="https://kaaathy.com/tongue-twist/#photos">place to learn together</a>
             </ul>
-            <ul><span class="pname">this text</span> is a <a href="" target="_blank">book</a> which is also a <a href=""
-                    target="_blank">website</a>
+            <ul><span class="cursive">this poem by wu xia</span> (translated by kw) is a <a
+                    href="https://docs.google.com/document/d/1YoNVG2j10MTi0Gqel-Y2Wu2BfTF4CTj8pvxns7jY7QI/edit?tab=t.jjgjwwttpf0z#bookmark=id.13v58k1fnxge"
+                    target="_blank">print object</a> which is also a <a
+                    href="https://docs.google.com/document/d/1YoNVG2j10MTi0Gqel-Y2Wu2BfTF4CTj8pvxns7jY7QI/edit?tab=t.jjgjwwttpf0z#bookmark=id.yt8knzgi7dj3"
+                    target="_blank">p5 gyroscope</a> which works on
+                <a href="https://editor.p5js.org/kathymakes/full/_eroPzKIV">mobile</a>
             </ul>
-            <ul><span class="pname">this text</span> is a <a href="" target="_blank">book</a> which is also a <a href=""
-                    target="_blank">website</a>
+            <ul><span class="cursive">this text</span> is a <a href="" target="_blank">book</a> which is also a <a
+                    href="" target="_blank">website</a>
             </ul>
-            <ul><span class="pname">this text</span> is a <a href="" target="_blank">book</a> which is also a <a href=""
-                    target="_blank">website</a>
-            </ul>
-            <div class="flowers-field">
-                &nbsp;&nbsp;✿&nbsp;&nbsp;&nbsp;✻&nbsp;&nbsp;&nbsp;✿&nbsp;&nbsp;
-                <br>\|/ \|/ \|/
+
+            <div class="seedlings">
+                ✿&nbsp;&nbsp;&nbsp;✻
+                <br>\|/ \|/
             </div>
         </section>
         <section id="about">
@@ -310,26 +342,34 @@
                 a press which is also not a press!
             </marquee>
             <h1><span class="underline">ethos</span> ☺︎</h1>
-            <p> This is not a press which is
+            <p> This is <span class="cursive">not a press</span> which is
                 also hanging out with friends which is also a
                 series of experiments and a thing that will grow.
+                <br><br>
+                we like free/low-cost text objects to touch and to click, for print and for screen, and making things
+                with many homes and many versions of themselves. &nbsp;
+                <span class="footnote"> this text will also change!</span>
                 <br><br>
                 Pedagogically oriented towards teaching how to make your own books and websites.
 
             <p class="footnote">Inspired by HTMLReview, Oral.Pub, Tilted House, Cartonera Collective, etc... Set in
                 Courier Prime Sans, HAL Timezone Trial,
                 and whatever default cursive font is in your browser.
-                This site was lovingly handcoded and uses no libraries or analytics. spinny Gif from Gifcities.org.
+                This site was lovingly handcoded and uses no libraries or analytics. spinny Gif from <a
+                    href="https://gifcities.org/" target="_blank">Gifcities.org</a>.
 
 
 
             </p>
             </p>
-            <h1><span class="underline">workshops</span></h1>
-            <ul>none upcoming~</ul>
+            <h1><span class="underline">events + workshops</span></h1>
+            <ul> may 15, 12 est<span class="little-flower">✻</span><a href="https://ifthen.cargo.site/">if/then open mic
+                </a></ul>
+            <p>want to do something together? email (insert email address!)</p>
 
         </section>
     </div>
+
     <script src="generator.js"></script>
 
 </html>
