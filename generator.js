@@ -5,8 +5,7 @@ let thing3 = document.getElementById("thing3");
 
 let allThings = [thing1, thing2, thing3];
 
-let objectList = `
-a BOOK
+let objectList = `a BOOK
 a FILM
 a WALK
 a MAP
@@ -72,8 +71,7 @@ Draft emails
 To do list
 calendar 
 Garbage
-Textbook
-`;
+Textbook`;
 
 let translationList = `AN INSTALLATION
 A MAP
@@ -136,8 +134,7 @@ Food
 Flags
 Vlog
 Belt
-Billboard
-`;
+Billboard`;
 
 let objects = objectList.split("\n");
 let translations = translationList.split("\n");
