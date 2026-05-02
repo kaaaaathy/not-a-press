@@ -5,17 +5,18 @@ let thing3 = document.getElementById("thing3");
 
 let allThings = [thing1, thing2, thing3];
 
-let objectList = `BOOK
-FILM
-WALK
-MAP
-DOCUMENT
-PLAY
-MUSEUM EXHIBIT
-ARCHIVE
-SOCIAL MEDIA PLATFORM
-RITUAL
-ALBUM OF SONGS
+let objectList = `
+a BOOK
+a FILM
+a WALK
+a MAP
+a DOCUMENT
+a PLAY
+a MUSEUM EXHIBIT
+a ARCHIVE
+a SOCIAL MEDIA PLATFORM
+a RITUAL
+an ALBUM OF SONGS
 craigslist
 facebook marketplace
 an oulipian poem
@@ -54,25 +55,20 @@ Music video
 A lived experience
 Dreams
 Notes app
-Dr bronners packaging manifesto
+Dr bronner's packaging manifesto
 Users manual
 past yearbooks
 Dating app bots
 Twitter bots
 Yogi tea threatening inspirational quotes
 Youtube video essay
-Hong Kong new wave movies
-Norwegian Wood by Murakami
 Roots
 Pop up ads
 Rituals vs routines
-Low resolution
-cats
+Low resolution cats
 Spam emails
 Real estate development brochures
 Draft emails
-The most important gift you’ve ever received
-Things in the trash
 To do list
 calendar 
 Garbage
@@ -91,15 +87,15 @@ A ZINE
 A QUILT
 AN ARTIST BOOK
 a symphony 
-Google drive folder
+a Google drive folder
 Karaoke
 Vinyl
 Stone carving
 Pool tiles
 A cookbook
 Moss growing
-zine series
-temporary installation 
+a zine series
+a temporary installation 
 Catalog
 Book
 Music video
@@ -120,11 +116,10 @@ Phone wallpaper
 Calendar
 Projection mapping
 Jewelry
-Sculpture
-A playlist
+playlist
 Dj set
 Poster
-A dance
+dance
 labels
 Clothing
 Admission tickets
@@ -140,7 +135,6 @@ Flip book
 Food
 Flags
 Vlog
-Site specific Projection
 Belt
 Billboard
 `;
@@ -180,6 +174,6 @@ function clear() {
 }
 function generate() {
   clear();
-  setTimeout(newTexts, 3000)
+  setTimeout(newTexts, 2000)
 
 }
