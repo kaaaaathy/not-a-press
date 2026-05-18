@@ -108,7 +108,8 @@
     }
 
     marquee {
-        height: 24px;
+        height: 30px;
+        cursor: pointer;
         user-select: none;
         position: fixed;
         width: 100%;
@@ -119,7 +120,6 @@
         font-size: 12px;
         line-height: 18px;
         text-transform: uppercase;
-        border-bottom: 1px dotted mediumorchid;
         background: lightgreen;
         color: darkslateblue;
         margin: 0px;
@@ -146,12 +146,7 @@
     }
 
 
-    section {
-        padding: 20px 50px;
-        overflow-y: scroll;
 
-
-    }
 
     .footnote {
         font-family: 'courier-sans', monospace;
@@ -211,14 +206,11 @@
     #thing3 {
         /* background-color: rgb(255, 184, 53); */
         border-radius: 2px;
-        color: orange;
-        font-family: 'Hal timezone';
+        color: #90ee90;
+        background: darkslateblue;
+        /* font-family: 'Hal timezone'; */
     }
 
-    #whee {
-        padding: 30px 0px;
-        border-bottom: 1px dotted cornflowerblue;
-    }
 
     .notepad {
         width: 100%;
@@ -227,10 +219,9 @@
 
     @media screen and (max-width: 1200px) {
 
-        section,
         #about,
         #examples {
-            padding: 20px 30px;
+            padding: 20px 0px;
         }
     }
 
@@ -260,13 +251,10 @@
             min-height: 700px;
             height: auto;
             border: none;
-            padding: 0px 50px;
+            padding: 0px 0px;
 
         }
 
-        #whee {
-            padding-top: 50px;
-        }
 
         #about {
             border-top: 1px dotted cornflowerblue;
@@ -276,7 +264,6 @@
 
         .seedlings {
             width: 100%;
-            margin-left: -50px;
             font-size: 16px;
         }
 
@@ -296,83 +283,33 @@
     <!-- <p id="surprise">☺</p> -->
 
     <div id="container">
-        <section id="examples">
-            <div id="whee">
+        <iframe class="notepad" id="examples"
+            src="https://docs.google.com/document/d/e/2PACX-1vRjVj5zbj7A2QazRNtY9kkjj6apZrjAuyUG5zkbX3JFArcKUs1Tuh-zBCzeciKLeRfgKa3BG1vaKUPU/pub?embedded=true">
+        </iframe>
 
-                <p class="cursive">translate
+        <div class="seedlings">
+            ✿&nbsp;&nbsp;&nbsp;✻
+            <br>\|/ \|/
+        </div>
 
-                    <span id="thing1">...</span>
+        <marquee scrollamount="1" behavior="alternate" onclick="generate()">
+            translate
 
-                    into
+            <span id="thing1">...</span>
 
-                    <span id="thing2">...</span>
-                    and then again into
+            into
 
-                    <span id="thing3">...</span>
-                </p> <img style="cursor:pointer" onclick="generate()" src="spiral.gif">
+            <span id="thing2">...</span>
+            and then again into
 
-            </div>
-            <h1><span class="underline-2">experiments + examples</span></h1>
-            <ul><span class="cursive">on cyan</span> is an <a href="https://kaaathy.com/#/cyan" target="_blank">artist
-                    book</a> which is also a <a href="https://vimeo.com/781114238?fl=pl&fe=ti"
-                    target="_blank">minifilm</a></ul>
-            <ul><span class="cursive">touching eachother through semiconduction</span> is an <a
-                    href="https://kaaathy.com/#/semiconduction" target="_blank">artist book</a>
-                which is also a <a href="https://kaaathy.com/semiconduction/index.html" target="_blank">web poem</a>
-            </ul>
-            <ul><span class="cursive">tonguetwist</span> is an <a href="https://kaaathy.com/tongue-twist/#examples"
-                    target="_blank">growing collection of
-                    transfluxions</a> which is
-                also a <a href="https://kaaathy.com/tongue-twist/#photos" target="_blank">place to learn together</a>
-            </ul>
-            <ul><span class="cursive">this poem by wu xia</span> (translated by kw) is a <a
-                    href="https://docs.google.com/document/d/1YoNVG2j10MTi0Gqel-Y2Wu2BfTF4CTj8pvxns7jY7QI/edit?tab=t.jjgjwwttpf0z#bookmark=id.13v58k1fnxge"
-                    target="_blank">print object</a> which is also a <a
-                    href="https://docs.google.com/document/d/1YoNVG2j10MTi0Gqel-Y2Wu2BfTF4CTj8pvxns7jY7QI/edit?tab=t.jjgjwwttpf0z#bookmark=id.yt8knzgi7dj3"
-                    target="_blank">p5 gyroscope</a> which works on
-                <a href="https://editor.p5js.org/kathymakes/full/_eroPzKIV" target="_blank">mobile</a>
-            </ul>
-            <ul><span class="cursive">this text</span> is a <a href="" target="_blank">book</a> which is also a <a
-                    href="" target="_blank">website</a>
-            </ul>
+            <span id="thing3">...</span>
 
-            <div class="seedlings">
-                ✿&nbsp;&nbsp;&nbsp;✻
-                <br>\|/ \|/
-            </div>
-            <br><br><br>
-        </section>
-        <section id="about">
-            <marquee scrollamount="3">
-                a press which is also not a press!
-            </marquee>
-            <h1><span class="underline">ethos</span> ☺︎</h1>
-            <p> This is <span class="cursive">not a press</span> which is
-                also hanging out with friends which is also a
-                series of experiments and a thing that will grow.
-                <br><br>
-                we like free/low-cost text objects to touch and to click, for print and for screen, and making things
-                with many homes and many versions of themselves. &nbsp;
-                <span class="footnote"> this text will also change!</span>
-                <br><br>
-                Pedagogically oriented towards teaching how to make your own books and websites.
+    </div>
+    </marquee>
 
-            <p class="footnote">Inspired by HTMLReview, Oral.Pub, Tilted House, Cartonera Collective, etc... Set in
-                Courier Prime Sans, HAL Timezone Trial,
-                and whatever default cursive font is in your browser.
-                This site was lovingly handcoded and uses no libraries or analytics. spinny Gif from <a
-                    href="https://gifcities.org/" target="_blank">Gifcities.org</a>.
+    <iframe class="notepad" id="about"
+        src="https://docs.google.com/document/d/e/2PACX-1vTB18WX7v44JNDIp-Ae3s5MF6QVuWHnOQevzAZTxCRWYZ67_Rd33gilkPEnO4ligFBHR8l-X9brep3l/pub?embedded=true"></iframe>
 
-
-
-            </p>
-            </p>
-            <h1><span class="underline">events + workshops</span></h1>
-            <ul> may 15, 12 est<span class="little-flower">✻</span><a href="https://ifthen.cargo.site/">if/then open mic
-                </a></ul>
-            <p>want to do something together? email (insert email address!)</p>
-            <br><br><br>
-        </section>
     </div>
 
     <script src="generator.js"></script>
