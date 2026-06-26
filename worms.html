@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="favicon" rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        @font-face {
+            font-family: "Arial Rounded";
+            src: url("Arial\ Rounded\ Bold.ttf");
+        }
+
+        @font-face {
+            font-family: "Inconsolate";
+            src: url("Inconsolata Medium.ttf");
+        }
+
+        body,
+        html {
+            cursor: url(earthworm.png), pointer;
+
+        }
+
+        body {
+            background-color: black;
+            background-image: url('ethos collage color.jpg');
+            background-size: cover;
+            margin: auto;
+            width: 100%;
+
+        }
+
+
+        section {
+            padding: 10px 40px;
+
+        }
+
+        h2 {
+            color: lightsalmon;
+            font-size: 30px;
+
+        }
+
+        a {
+            text-decoration-style: wavy;
+            text-decoration-color: lightsalmon;
+            margin: 10px 0px;
+
+        }
+
+        p,
+        a {
+            font-size: 15px;
+            color: white;
+
+            line-height: 1.7rem;
+        }
+
+        h2,
+        a,
+        p {
+            font-family: 'Arial Rounded';
+            letter-spacing: 2px;
+
+
+        }
+
+        h2 {
+            height: 15px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        #convo,
+        #dig {
+            padding-top: 30px;
+        }
+
+
+        .wormy {
+            animation-name: wriggle;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes wriggle {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+                /* Adjust height of the wave here */
+            }
+        }
+
+        p {
+            /* font-family: 'Inconsolata', monospace;
+            letter-spacing: 0.5px;
+            font-size: 12px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2 id="welcome">welcome to</h2>
+        <h2 id="www">the worm wide web</h2>
+        <p>...a low-tech accompaniment to our annelidian zine. thanks for visiting!
+        </p>
+        <h2 id="convo">listen</h2>
+        <p>...to an audio (re)enactment of our mutual interview~</p>
+        <br>
+
+
+        <audio src="" controls></audio>
+        <h2 id="dig">dig further</h2>
+        <a href="" id="essay"> ↝ read the (w)hole essay on hopscotch</a>
+        <br>
+        <a href="https://kaaathy.com/not-a-press/ethos.html" id="ethos"> ↝ nestle into ethos subsoil</a>
+
+    </section>
+</body>
+<script>
+    wiggle('#welcome')
+    wiggle('#www')
+
+    wiggle('#convo')
+    wiggle('#dig')
+
+
+    function checkSpace(x) {
+        return /\s/.test(x);
+    }
+
+    function wiggle(what) {
+        let textElement = document.querySelector(what);
+
+        let text = textElement.textContent.split('');
+        textElement.textContent = '';
+
+        // Wrap each letter in a span with a unique animation delay
+        text.forEach((letter, index) => {
+            let segment = document.createElement('div');
+            console.log(letter + " comes up as " + checkSpace(letter))
+
+            if (!checkSpace(letter)) {
+                segment.textContent = letter;
+            } else if (checkSpace(letter)) {
+                segment.innerHTML = "&nbsp;";
+            }
+            // Stagger the start time of each letter
+            segment.classList.add('wormy')
+            segment.style.animationDelay = index * 0.1 + 's';
+            // console.log(textElement);
+
+            textElement.appendChild(segment);
+        });
+    }
+</script>
+
+
+</html>

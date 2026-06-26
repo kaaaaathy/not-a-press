@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="favicon" rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body,
+        html {
+            cursor: url(earthworm.png), pointer;
+
+        }
+
+        body {
+            background-color: black;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* img {
+            width: 100%;
+        } */
+        #soil {
+
+            top: 0px;
+            width: 100%;
+            /* transform: translateY(0%); */
+
+        }
+
+        #caption {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+
+        }
+
+        .burrow {
+            animation: burrow 500s linear infinite forwards;
+        }
+
+
+        @keyframes burrow {
+            0% {
+                transform: translateY(0%);
+
+            }
+
+            50% {
+                transform: translateY(-90%);
+            }
+
+            100% {
+                transform: translateY(0%);
+
+            }
+        }
+
+        span {
+            font-size: 12px;
+            font-family: 'inconsolata', monospace;
+            color: lightsalmon;
+            background-color: black;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img id="soil" src="ethos collage.jpg"> -->
+    <img id="soil" src="ethos collage.jpg">
+    <div id="caption">
+        <span> ~ click the subsoil to start/stop burrowing ~</span>
+    </div>
+    <script>
+        let soil = document.getElementById('soil')
+        document.body.addEventListener('click', () => {
+            soil.classList.toggle('burrow');
+        });
+
+    </script>
+</body>
+
+</html>
